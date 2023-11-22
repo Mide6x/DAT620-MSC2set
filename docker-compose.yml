@@ -1,0 +1,13 @@
+version: '3'
+
+
+services:
+  database:
+    container_name: postgres-datmsc2
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    volumes:
+      - /Users/nolimitmide/Desktop/DAT620-MSC2set/datmsc2:data/postgres
+    env_file:
+      - datmsc2.env
